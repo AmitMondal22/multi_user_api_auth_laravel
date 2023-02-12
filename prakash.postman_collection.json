@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "fa00ebbb-f292-4887-b1e3-07234ba0013f",
+		"name": "prakash",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-account?name=amit mondal&email=mamit7025@gmail.com&mobile=1234567890&password=Amit@7025",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-account"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "amit mondal"
+						},
+						{
+							"key": "email",
+							"value": "mamit7025@gmail.com"
+						},
+						{
+							"key": "mobile",
+							"value": "1234567890"
+						},
+						{
+							"key": "password",
+							"value": "Amit@7025"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp validation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/otp-validation?email=mamit7025@gmail.com&otp=687400&mobile=1234567890&id=8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"otp-validation"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mamit7025@gmail.com"
+						},
+						{
+							"key": "otp",
+							"value": "687400"
+						},
+						{
+							"key": "mobile",
+							"value": "1234567890"
+						},
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resend otp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resend-otp?email=mamit7025@gmail.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resend-otp"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mamit7025@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/change-password?password=Amit@7025&otp=272030&id=8&email=mamit7025@gmail.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"change-password"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "Amit@7025"
+						},
+						{
+							"key": "otp",
+							"value": "272030"
+						},
+						{
+							"key": "id",
+							"value": "8"
+						},
+						{
+							"key": "email",
+							"value": "mamit7025@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|UiFeDZbOhhaM16ZBCUTCAvPOg6SAGMxDorr04Uss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?email=mamit7025@gmail.com&password=Amit@7025",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mamit7025@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "Amit@7025"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|PgeqlRIOr6xn7WxwUfKUngf9Gmhk2qy6lmeqfoSc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|UiFeDZbOhhaM16ZBCUTCAvPOg6SAGMxDorr04Uss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/view-auth",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"view-auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
