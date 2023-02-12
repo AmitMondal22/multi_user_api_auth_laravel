@@ -29,5 +29,7 @@ Route::post('/login',[User::class,'login']);
 Route::middleware('auth:sanctum','ability:U')->group(function(){
     Route::get('view-auth',[User::class,'getview']);
 
+
+    //===================logout=========================
     Route::post('/logout',[User::class,'logout']);
 });
