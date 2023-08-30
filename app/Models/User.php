@@ -25,6 +25,18 @@ class User extends Authenticatable
         'role',
         'otp',
         'otp_status',
+        "role",
+        "otp",
+        "otp_status",
+        "sellers_id",
+        "sellers_type",
+        "business_id",
+        "user_type",
+        "deleted_flag",
+        "deleted_by",
+        "deleted_at",
+        "created_by",
+        "update_by"
     ];
 
     /**
